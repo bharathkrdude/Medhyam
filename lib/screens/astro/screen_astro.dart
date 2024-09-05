@@ -10,6 +10,6 @@ class ScreenAstro extends StatefulWidget {
 class _ScreenAstroState extends State<ScreenAstro> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold();
   }
 }

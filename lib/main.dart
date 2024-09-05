@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medhyam/screens/splashScreen/screen_splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Medhyam screens',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
+    
       ),
+      debugShowCheckedModeBanner: false,
+      home: const SplashScreen(),
     );
   }
 }

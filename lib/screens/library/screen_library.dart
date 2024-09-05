@@ -10,6 +10,8 @@ class ScreenLibrary extends StatefulWidget {
 class _ScreenLibraryState extends State<ScreenLibrary> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      body: Center(child: Text("Librarry page")),
+    );
   }
 }
