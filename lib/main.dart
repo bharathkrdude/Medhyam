@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medhyam/core/colors.dart';
 import 'package:medhyam/screens/splashScreen/screen_splash.dart';
 
 void main() {
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Medhyam screens',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        primaryColor: backgroundColorWhite,
+        cardColor: white,
         useMaterial3: true,
     
       ),

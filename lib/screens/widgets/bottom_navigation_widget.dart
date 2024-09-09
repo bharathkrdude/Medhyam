@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medhyam/core/colors.dart';
 import 'package:medhyam/screens/astro/screen_astro.dart';
+import 'package:medhyam/screens/astro/temp/my_design_screen.dart';
 import 'package:medhyam/screens/home/screen_home.dart';
 import 'package:medhyam/screens/library/screen_library.dart';
 import 'package:medhyam/screens/mandir/screen_mandir.dart';
@@ -18,10 +19,10 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
 
   final List<Widget> _screens = [
     const ScreenHome(),
-    const ScreenAstro(),
+    const MyDesignsScreen(),
     const ScreenMandir(),
     const ScreenServices(),
-    const ScreenLibrary(),
+     AstrologerListingPage(),
   ];
 
   void _onTabTapped(int index) {
@@ -34,7 +35,10 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 100, // Increased toolbar height
+        surfaceTintColor: Colors.white,
+        backgroundColor: white,
+        
+        toolbarHeight: 50, // Increased toolbar height
         leading: Padding(
           padding: const EdgeInsets.all(8.0), // Adjusted padding
           child: Container(
@@ -129,7 +133,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
         unselectedIconTheme: const IconThemeData(color: hintTextColor),
         backgroundColor: backgroundColorWhite,
         type: BottomNavigationBarType.fixed,
-        fixedColor: textColor,
+        fixedColor: borderColor,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.other_houses_outlined),
