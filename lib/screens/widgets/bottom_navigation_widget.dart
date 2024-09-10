@@ -19,7 +19,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
 
   final List<Widget> _screens = [
     const ScreenHome(),
-    const MyDesignsScreen(),
+     ScreenAstro(),
     const ScreenMandir(),
     const ScreenServices(),
      AstrologerListingPage(),

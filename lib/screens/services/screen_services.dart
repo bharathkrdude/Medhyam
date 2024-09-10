@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:medhyam/core/constants.dart';
+import 'package:medhyam/screens/astro/temp/my_design_screen.dart';
 import 'package:medhyam/screens/home/screen_home.dart';
 import 'package:medhyam/screens/home/widgets/search_widget.dart';
+import 'package:medhyam/screens/library/screen_library.dart';
 
 class ScreenServices extends StatefulWidget {
   const ScreenServices({super.key});
@@ -77,44 +80,15 @@ class _ScreenServicesState extends State<ScreenServices> {
               ),
             ),
           ),
-           Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              image: DecorationImage(
-                                image: AssetImage("assets/images/shiva.jpeg"),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            child: Stack(
-                              children: [
-                                Align(
-                                  alignment: Alignment.bottomCenter,
-                                  child: Container(
-                                    width: double.infinity,
-                                    height: 60,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: const BorderRadius.only(
-                                        bottomLeft: Radius.circular(10),
-                                        bottomRight: Radius.circular(10),
-                                      ),
-                                    ),
-                                    padding: const EdgeInsets.symmetric(vertical: 5),
-                                    child: Center(
-                                      child: Text(
-                                        "Sample Text",
-                                        textAlign: TextAlign.center,
-                                        style: const TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: DesignCardWidget(),
+        ),
+        kHeight20,
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: DesignCardWidget(),
+        )
         ],
       ),
     );

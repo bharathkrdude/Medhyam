@@ -18,6 +18,14 @@ const kHeight30 = SizedBox(height: 30);
 const kHeight35 = SizedBox(height: 35);
 const kHeight40 = SizedBox(height: 40);
 const kHeight50 = SizedBox(height: 50);
+const kWidth5 = SizedBox(width: 5);
+const kWidth25 = SizedBox(width: 25);
+const kWidth10 = SizedBox(width: 10);
+const kWidth15 = SizedBox(width: 15);
+const kWidth20 = SizedBox(width: 20);
+const kWidth30 = SizedBox(width: 30);
+const kWidth40 = SizedBox(width: 40);
+const kWidth50 = SizedBox(width: 50);
 
 
 // Textstyles
@@ -33,7 +41,22 @@ class TextStyles {
     fontWeight: FontWeight.bold,
     color: Colors.black,
   );
-
+  static const TextStyle bodyTextWhite = TextStyle(
+    fontSize: 18.0,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+  );
+   static const TextStyle bodyTextWhite2 = TextStyle(
+    fontSize: 16.0,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+  );
+static const TextStyle heading3 = TextStyle(
+    fontSize: 18.0,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+    
+  );
   static const TextStyle bodyText = TextStyle(
     fontSize: 16.0,
     fontWeight: FontWeight.normal,
