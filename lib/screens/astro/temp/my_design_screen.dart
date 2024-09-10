@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:medhyam/core/colors.dart';
 import 'package:medhyam/core/constants.dart';
 
 class MyDesignsScreen extends StatelessWidget {

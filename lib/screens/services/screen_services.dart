@@ -3,7 +3,6 @@ import 'package:medhyam/core/constants.dart';
 import 'package:medhyam/screens/astro/temp/my_design_screen.dart';
 import 'package:medhyam/screens/home/screen_home.dart';
 import 'package:medhyam/screens/home/widgets/search_widget.dart';
-import 'package:medhyam/screens/library/screen_library.dart';
 
 class ScreenServices extends StatefulWidget {
   const ScreenServices({super.key});
@@ -47,20 +46,24 @@ class _ScreenServicesState extends State<ScreenServices> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8.0),
                     image: DecorationImage(
-                      opacity: 0.6,
+                      
                       image: NetworkImage(image[index]),
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: Center(
-                    child: Text(
-                      index < 4 ? ['Bhajan', 'Socials', 'Aarti', 'Temples'][index] : '',
-                      style: const TextStyle(
-                        
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        
+                  child: Container(
+                     decoration: BoxDecoration(
+              color: Colors.black.withOpacity(0.45),),
+                    child: Center(
+                      child: Text(
+                        index < 4 ? ['Bhajan', 'Socials', 'Aarti', 'Temples'][index] : '',
+                        style: const TextStyle(
+                          
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          
+                        ),
                       ),
                     ),
                   ),
