@@ -16,9 +16,19 @@ class ScreenAstro extends StatefulWidget {
 class _ScreenAstroState extends State<ScreenAstro> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: backgroundColorlightgrey,
-      appBar: AppBar(title: Text('Astrologers'),surfaceTintColor: white,backgroundColor: white, actions: [ FilterButton(),SizedBox(width: 10,)],),
+      appBar: AppBar(
+        title: Text('Astrologers'),
+        surfaceTintColor: white,
+        backgroundColor: white,
+        actions: [
+          FilterButton(),
+          SizedBox(
+            width: 10,
+          )
+        ],
+      ),
       body: ListView.builder(
         itemCount: 5, // Replace with your actual item count
         itemBuilder: (context, index) {

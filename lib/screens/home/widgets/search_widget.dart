@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medhyam/core/constants.dart';
 
 class SearchBarWidget extends StatelessWidget {
   const SearchBarWidget({super.key});
@@ -10,12 +11,13 @@ class SearchBarWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: Colors.grey[300],  // Light grey background
-          borderRadius: BorderRadius.circular(18),  // Rounded corners
+          borderRadius: BorderRadius.circular(20),  // Rounded corners
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Row(
             children: [
+              kWidth20,
               Icon(
                 Icons.search,
                 color: Colors.grey[700], // Icon color

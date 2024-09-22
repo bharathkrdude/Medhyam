@@ -43,7 +43,7 @@ class DesignCardWidget extends StatelessWidget {
           Container(
             height: MediaQuery.of(context).size.height * 0.2,
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.7),
+              color: Colors.black.withOpacity(0.6),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(10),
                 topRight: Radius.circular(10),

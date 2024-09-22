@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medhyam/core/colors.dart';
+import 'package:medhyam/core/constants.dart';
 import 'package:medhyam/screens/astro/screen_astro.dart';
-import 'package:medhyam/screens/astro/temp/my_design_screen.dart';
 import 'package:medhyam/screens/home/screen_home.dart';
 import 'package:medhyam/screens/library/screen_library.dart';
 import 'package:medhyam/screens/mandir/screen_mandir.dart';
@@ -34,6 +34,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColorgrey,
       appBar: AppBar(
         surfaceTintColor: Colors.white,
         backgroundColor: white,
@@ -42,11 +43,11 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
         leading: Padding(
           padding: const EdgeInsets.all(8.0), // Adjusted padding
           child: Container(
-            width: 80, // Increased width for the image
+            width: 100, // Increased width for the image
             height: 80, // Increased height for the image
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/MedhyamLogo.png'),
+                image: AssetImage('assets/images/MedhyamLogo.png',),
                 fit: BoxFit.contain, // Adjust the fit if needed
               ),
             ),
@@ -67,20 +68,24 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
           ),
         ],
       ),
-      endDrawer: Drawer(
+      endDrawer: Drawer( width: MediaQuery.of(context).size.width * 0.6,
+        surfaceTintColor: white,
+        backgroundColor: backgroundColorWhite,
         child: SizedBox(
           width: MediaQuery.of(context).size.width * 0.5,
           child: Column(
             children: <Widget>[
-              const DrawerHeader(
+               DrawerHeader(
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: backgroundColorWhite,
                 ),
-                child: Text('Menu'),
+                child: Container(
+                  child: Image.asset("assets/images/MedhyamLogo.png"),
+                ),
               ),
               ListTile(
-                leading: const Icon(Icons.home),
-                title: const Text('Home'),
+                leading: const Icon(Icons.home,color: Colors.blueGrey,size: 26,),
+                title: const Text('Home',style: TextStyles.drawerText,),
                 onTap: () {
                   Navigator.pop(context);
                   setState(() {
@@ -89,8 +94,8 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.search),
-                title: const Text('Search'),
+                leading: const Icon(Icons.search,color: Colors.blueGrey,size: 26,),
+                title: const Text('Search',style: TextStyles.drawerText,),
                 onTap: () {
                   Navigator.pop(context);
                   setState(() {
@@ -99,8 +104,8 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.notifications),
-                title: const Text('Notifications'),
+                leading: const Icon(Icons.notifications,color: Colors.blueGrey,size: 26,),
+                title: const Text('Notifications',style: TextStyles.drawerText,),
                 onTap: () {
                   Navigator.pop(context);
                   setState(() {
@@ -109,8 +114,8 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.person),
-                title: const Text('Profile'),
+                leading: const Icon(Icons.person,color: Colors.blueGrey,size: 26,),
+                title: const Text('Profile',style: TextStyles.drawerText,),
                 onTap: () {
                   Navigator.pop(context);
                   setState(() {

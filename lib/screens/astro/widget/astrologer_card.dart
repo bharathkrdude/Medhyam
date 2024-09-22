@@ -14,7 +14,8 @@ class AstrologerCard extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.all(8.0),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start, // Align items to the start of the row
+          crossAxisAlignment:
+              CrossAxisAlignment.start, // Align items to the start of the row
           children: [
             // Column for Avatar and Rating
             Column(
@@ -29,9 +30,9 @@ class AstrologerCard extends StatelessWidget {
                       width: 4, // Thickness of the border
                     ),
                   ),
-                  child: CircleAvatar(
+                  child: const CircleAvatar(
                     radius: 30,
-                    backgroundImage: NetworkImage("http://surl.li/fybenl"),
+                    backgroundImage: NetworkImage("https://www.bestastrologer.asia/uploads/1/0/5/6/10560370/best-astrologer_orig.png"),
                   ),
                 ),
                 SizedBox(height: 5), // Space between the avatar and rating
@@ -40,11 +41,13 @@ class AstrologerCard extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     color: Colors.white, // White background
-                    borderRadius: BorderRadius.circular(8), // Rounded corners for the box
+                    borderRadius:
+                        BorderRadius.circular(8), // Rounded corners for the box
                     border: Border.all(color: Colors.grey), // Grey border
                   ),
                   child: Row(
-                    mainAxisSize: MainAxisSize.min, // Adjusts to the content size
+                    mainAxisSize:
+                        MainAxisSize.min, // Adjusts to the content size
                     children: [
                       Text(
                         '4.3', // The rating value
@@ -54,7 +57,8 @@ class AstrologerCard extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(width: 5), // Space between the rating and star icon
+                      SizedBox(
+                          width: 5), // Space between the rating and star icon
                       Icon(
                         Icons.star,
                         color: Colors.amber,
@@ -63,7 +67,6 @@ class AstrologerCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                 
               ],
             ),
             SizedBox(width: 10),
@@ -82,9 +85,10 @@ class AstrologerCard extends StatelessWidget {
                   ),
                   kHeight10,
                   Text('Exp: 20 years', style: TextStyles.hintTextStyle1),
-                  Text('Lang: English, Hindi', style: TextStyles.hintTextStyle1),
+                  Text('Lang: English, Hindi',
+                      style: TextStyles.hintTextStyle1),
                   Text('Vedic, Numerology ', style: TextStyles.hintTextStyle2),
-   VerticalDivider(
+                  VerticalDivider(
                     color: Colors.grey, // Color of the divider
                     thickness: 1, // Thickness of the divider
                     width: 10, // Space before and after the divider
@@ -97,11 +101,14 @@ class AstrologerCard extends StatelessWidget {
             Column(
               children: [
                 kHeight50,
-                Text('₹18/min', style: TextStyle(fontSize: 12, decoration: TextDecoration.lineThrough)),
-                Text('Free Call', style: TextStyle(color: Colors.red, fontSize: 12)),
+                Text('₹18/min',
+                    style: TextStyle(
+                        fontSize: 12, decoration: TextDecoration.lineThrough)),
+                Text('Free Call',
+                    style: TextStyle(color: Colors.red, fontSize: 12)),
               ],
             ),
-                
+
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: VerticalDivider(
@@ -114,7 +121,6 @@ class AstrologerCard extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                
                 CustomElevatedButton(
                   text: "Chat",
                   onPressed: () {},
